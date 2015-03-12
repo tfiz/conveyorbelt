@@ -15,6 +15,17 @@ def get_hype_session(user, password):
 
     return s
 
+def get_dummy_session():
+    return requests.session()
+
+def close_session(s):
+    s.close()
+
+def download_popular_20():
+    s = get_dummy_session()
+    download_list(get_hype_popular_last_3_days(s))
+    close_session(s)
+
 def get_hype_url(song_page_url, s):
     r = s.get(song_page_url)
     if (r.status_code == 200):
