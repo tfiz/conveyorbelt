@@ -1,5 +1,5 @@
 # pypem
-somewhat of a hypemachine interface 
+download from hypme.com 
 
 Lets you download songs via hypemachine's listings.  It works *most* of the time.
 Hypemachine is a frontend of sorts for other blogs; it doesn't host music.
