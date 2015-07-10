@@ -1,9 +1,8 @@
-# pypem
-download from hypme.com 
+# conveyorbelt
+grab songs from hypemachine 
 
 Lets you download songs via hypemachine's listings.  It works *most* of the time.
-Hypemachine is a frontend of sorts for other blogs; it doesn't host music.
-Once we get the download urls we just go to the respective sites and grab the files.
+Get the stream urls and go to the respective sites and grab the files.
 
 Requires requests
 
