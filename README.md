@@ -1,24 +1,25 @@
 # conveyorbelt
-grab songs from hypemachine 
+grab songs from the hype machine 
 
-Lets you download songs via hypemachine's listings.  It works *most* of the time.
+Lets you download songs via hypemachine's listings.
 Get the stream urls and go to the respective sites and grab the files.
 
-Requires requests
+Requires requests - make http requests
+         pickle - don't redownload stuff
+         mutagen - edit audio tags
 
 Maybe your favorites?
 ```python
-s = get_hype_session("some_user_name", "the_correct_password")
-ls = get_hype_user_loves("some_user_name", s)
-download_list(ls)
-close_session(s)
+import conveyb
+conveyb.get_loves(some_user)
 ```
 
 Or maybe you just want the top 20 in the past three days?
-There is no need to actually login though it may help if
-you have problems with blocking. Just create a dummy session
-and download.
 
 ```python
-download_popular_20()
+import conveyb
+conveyb.get_top20()
 ```
+
+A file (default bucket.p) will be created to avoid duplicate downloads.
+This name and the default folder can be changed.
